@@ -81,7 +81,7 @@ def parse_application_hdr(application_hdr):
 # |                                                    frameStructure                                                         |
 # |                                                    cpLength[15:8]                                                         |
 # |                                                    cpLength[7:0]                                                          |
-# |                                                       udCompHdr                                                            |
+# |                                                       udCompHdr                                                           |
         logs.add('timeOffset', str(int(application_hdr[6] + application_hdr[7], 16)))
         logs.add('frameStructure', str(int(application_hdr[8], 16)))
         logs.add('cpLength', str(int(application_hdr[9] + application_hdr[10], 16)))
